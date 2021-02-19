@@ -1,0 +1,15 @@
+﻿@page "/Admin"
+@using RazorPagesAndBlazor
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+<base href="~/Admin/" />
+</head>
+<body>
+    @(await Html.RenderComponentAsync<App>(RenderMode.ServerPrerendered))
+    <script type="text/javascript" src="/_framework/blazor.server.js"></script>
+</body>
+</html>
